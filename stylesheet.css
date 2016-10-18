@@ -7,72 +7,227 @@
 
 body {
     font-family: 'Raleway', sans-serif;
-    font: 400;
+    font-weight: 400;
     line-height: 1.5em;
+    background-color: black;
     color: ;
 }
 
 p {
     font-size: ;
     margin-bottom: ;
+    color: #ecedf0;
+}
+
+.thick {
+    font-weight: 600;
+}
+
+.posters img {
+    max-width: 100%;
+   /* padding: 10px;
+    border: solid 1px #d9e4ea; */
 }
 
 h1 {
-    font-family: 'Work Sans', sans-serif;
-    font: 400;
-    font-size: 1.3em;
-    color: darkslateblue;
+    font-weight: 400;
 }
 
+h2 {
+    font-weight: 500;
+    font-size: 1.3em;
+    color: #ced5e5;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 1.3em;
+    color: #ecedf0;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+h1,
+h2,
+h3,
+.title {
+    font-family: 'Work Sans', sans-serif;
+}
+
+hr {
+    width: 200px;
+    border: 0;
+    height: 1px;
+    background: #ffd700;
+    margin-top: 25px;
+}
+
+.bold {
+    color: #ffd700;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.pillow {
+    padding: 0.3125em;
+}
+
+/*----- Link Attributes -----*/
 a {
     text-decoration: none;
-    color: #000;
+    color: #FFF;
 }
 
 a:hover {
-    color: darkslateblue;
+    color: #fff;
 }
+    
+a:visited:active {
+    color: #5882e2;
+}
+    
 
 /*******************************/
 /****** NAVIGATION/HEADER *****/
 
 .nav-bar {
-    background: dimgray;
+    background: black;
+    
 }
 
 .logo {
     width: 250px;
+    display: block;
+    margin: 0 auto;
 }
 
 .nav-buttons,
 .nav-buttons li {
-    /* background-color: azure; /* temporary */
     text-align: center;
-    padding-right: 15px;
+    padding-right: 1em;
+    text-transform: uppercase;
 }
 
 .nav-buttons li {
-    margin-right: 12px;
+    margin-right: 0.625em;
     list-style: none;
+    
 }
 
 .logo a,
 .nav-buttons a {
-    padding: 10px 15px;
+    padding: 0.625em 0.5em 0.625em 1em;
     display: block;
+    margin: 0 auto;
 }
+
+.menu {
+    padding: 1.125em 1.875em 0.625em 1em;
+    display: block;
+    margin: 0 auto;
+}
+
 
 /******************************/
 /********** CONTENT **********/
 
-.main-img {
+/* .main-img {
     width: 100%;
+} */
+
+/*---- Main Section ---*/
+
+.main-photo {
+    padding-top: 350px;
+    height: 950px;
+    background: linear-gradient(#333, transparent 30%), 
+              linear-gradient(0deg, #000, transparent),
+              #03396c url('pexels-photo-115558.jpeg') no-repeat center;
+  
+    background-size: cover;
+    text-align: center;
 }
+
+.title {
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: .08em;
+    font-weight: 600;
+    text-shadow: 0 2px 2px rgba(0,0,0, .8);
+    padding-bottom: 0.3125em;
+}
+
+.arrow {
+    margin-top: 200px;
+    color: #ffd700;
+}
+
+/*------ Equipment ------*/
+
+.equipment {
+    text-align: center;
+    background-color: black;
+    color: #fff;
+    padding-bottom: 3.125em;
+}
+
+.button {
+	color: #fff;
+	text-align: center;
+	padding: .625em 3.5em;
+	background: #ffd700;
+	border-radius: 0;
+}
+
+/*--- Films/Poster Section ---*/
+
+.films {
+    text-align: center;
+    padding: 2em 1em 2em 1em;
+}
+
+.posters {
+    text-align: center;
+    padding: 1em;
+}
+
+.carousel {
+  background: #EEE;
+}
+
+.carousel-cell {
+  width: 100%;
+  height: 600px;
+  margin-right: 10px;
+  background: #8C8;
+  counter-increment: carousel-cell;
+}
+
+.carousel-cell.is-selected {
+  background: #ED2;
+}
+
+.primary,
+.secondary {
+  width: 48%;
+  padding-bottom: 2.8125em;
+}
+
+.primary {
+  float: left;
+}
+
+.secondary {
+  float: right;
+}
+
+/*--- Contact Section ---*/
 
 .contact li {
     list-style: none;
     margin-left: -45px;
-    padding: 5px;
+    padding: 0.3125em;
 }
 
 .col {
@@ -80,9 +235,32 @@ a:hover {
     padding-left: 1em;
 }
 
+.about {
+    padding-top: 1em;
+    padding-bottom: 0.3125em;
+}
+
 .contact {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: .75em;
+    padding-bottom: 1em;
+    color: #ecedf0;
+}
+
+/*- Contrasting Sections -*/
+
+.whitebg {
+    background-color: white;
+}
+
+.darker {
+    font-weight: 500;
+    font-size: 1.3em;
+    color: #3d3f44;
+    text-transform: uppercase;
+}
+
+.darkertxt {
+    color: #676a72;
 }
 
 /*******************************/
@@ -90,27 +268,50 @@ a:hover {
 
 .main-footer {
     text-align: center; 
-    background-color: dimgrey;
-    color: white;
-    padding-top: 5px;
-    padding-bottom: 10px;
+    background-color: #000;
+    color: #ecedf0;
+    padding-top: .25em;
+    padding-bottom: .50em;
 }
 
 /*****************************/
 /******* MEDIA QUERIES ******/
 
 @media (min-width: 769px) {
+    
+   /* body {
+        padding-top: 76px;
+    } */
+    
+    .main-header {
+        position: fixed;
+        background: #333;
+        /* box-shadow: 0 1px 4px rgba(0,0,0,.8); */
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        background-color: transparent;
+        background: transparent;
+    }
+    
     .wrap {
         min-height: calc(100vh - 70px);
     }
     
+    .nav-container,
     .container {
-    width: 100%;
-    margin: 0 auto;
+        width: 100%;
+        margin: 0 auto;
     }
     
+    .main-container {
+        width: 100%;
+    }
+    
+    /*-------- navigation -------*/
+    
     .logo {
-        float: left;
+        float: left;   
     }
     
     .nav-buttons {
@@ -118,16 +319,48 @@ a:hover {
     }
     
     .nav-buttons li {
-        float: left;
-        margin-left: 12px;
+        float: right;
+        margin-left: 0.75em;
     }
     
-    /* ---- columns ---- */
+    /*--- film poster carousel --*/
+    
+    .posters {
+        display: none;
+    }
+    
+    .gallery-cell { 
+        width: 30%;
+    }
+    
+    /* --- equipment columns --- */
+    
+    .first,
+    .second,
+    .third {
+        display: inline-block;
+        padding: 1.5em;
+        margin: 0.5em;
+        width: 30%;
+    }
+    
+    .fourth {
+        padding: 1.5em;
+        margin: .5em;
+    }
+    
+    .appear {
+        display: none;
+    }
+    
+    
+    
+    /* ---- contact columns ---- */
     
     .col {
         float: left;
-        padding-left: 1em; /* 1em */
-        padding-right: 1em; /* 1em */
+        padding-left: 1em; 
+        padding-right: 1em; 
     }
     
     .about {
@@ -138,10 +371,76 @@ a:hover {
         width: 30%; /* in percentages that both columns will equal 100% */
     }
     
+    
+    /* --- clearfix --- */
+    
   .clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
+        content: "";
+        display: table;
+        clear: both;
     }
 
+}
+
+@media (min-width: 481px) {
+    .posters,
+    .fullnav {
+        display:none;
+    }
+    
+    .first,
+    .second,
+    .third, 
+    .fourth {
+        padding: 1.5em;
+        margin: .2em;
+    }
+    
+    .logo {
+        float: left;
+    }
+    
+    .menu {
+        float: right;
+        margin-top: 0.625em;
+        margin-right: 1.25em;
+    }
+    
+}
+
+@media (max-width: 480px) {
+   
+    .films,
+    .fullnav {
+        display: none;
+    }
+    
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    .figcaption {
+        font-size: .5em;
+        padding: .5em;	
+    }
+    
+    .first,
+    .second,
+    .third, 
+    .fourth {
+        padding: 2em;
+        margin: 1.5em;
+    }
+    
+    .logo {
+        width: 40%;
+        float: left;
+        margin-top: 0.3125em;
+        margin-left: 1.25em;
+    }
+    
+    .menu {
+        float: right;
+    }
+    
 }
